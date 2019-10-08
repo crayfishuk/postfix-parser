@@ -97,7 +97,7 @@ var regex = {
      ),
   bounce: new RegExp(
        '^(?:(' + postfixQidAny + '): )?' +
-       'sender non-delivery notification: ' +
+       'sender.+notification: ' +
        '(' + postfixQidAny + '$)'
      ),
   'bounce-fatal': new RegExp(
