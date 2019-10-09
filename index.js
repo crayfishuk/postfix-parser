@@ -13,7 +13,8 @@ var regex = {
       '^(?:(' + postfixQidAny + '): )?' +
       '(client)=([^,]+), ' +
       '(sasl_method)=([^,]+), ' +
-      '(sasl_username)=(.*)$'
+      '(sasl_username)=([^,]+)' +
+      '(?:, (sasl_sender)=<?([^>]+)>?)?$'
       ),
   smtp: new RegExp(
       '^(?:(' + postfixQidAny + '): )?' +
