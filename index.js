@@ -68,7 +68,7 @@ var regex = {
   // postfix sometimes truncates the message-id, so don't require ending >
   cleanup: new RegExp(
       '^(?:(' + postfixQidAny + '): )?' +
-      '((?:resent-)?message-id)=<(.*?)>?$'
+      '((?:resent-)?message-id)=<?(.*?)>?$'
       ),
   pickup: new RegExp(
       '^(?:(' + postfixQidAny + '): )?' +
